@@ -51,10 +51,8 @@ const Header: React.FC<HeaderProps> = ({ conversation }) => {
             <Avatar user={otherUser} />
           )}
           <div className="flex flex-col">
-            <div className="cursor-default">
-              {conversation.name || otherUser.name}
-            </div>
-            <div className="text-sm font-light text-neutral-500 cursor-default">
+            <div>{conversation.name || otherUser.name}</div>
+            <div className="text-sm font-light text-neutral-500">
               {statusText}
             </div>
           </div>
@@ -62,7 +60,7 @@ const Header: React.FC<HeaderProps> = ({ conversation }) => {
         <HiEllipsisHorizontal
           size={32}
           onClick={() => setDrawerOpen(true)}
-          className="text-purple-500 cursor-pointer hover:text-sky-500 transition"
+          className="text-sky-500 cursor-pointer hover:text-sky-600 transition"
         />
       </div>
     </>

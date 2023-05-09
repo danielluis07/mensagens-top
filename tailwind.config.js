@@ -13,4 +13,5 @@ module.exports = {
       strategy: "class",
     }),
   ],
+  darkMode: "class",
 };
